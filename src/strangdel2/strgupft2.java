@@ -11,8 +11,15 @@ public class strgupft2 {
     }
 
     private static String camelCase(String s) {
+
+        for (int i = 0; i < s.length(); i++) {
+            if (s == "\\s") {
+                int camel = Character.toUpperCase(Integer.parseInt(s));
+            }
+        }
         s = s.replaceAll("\\s", "");
         System.out.println(s);
         return s;
     }
+
 }
